@@ -1,0 +1,15 @@
+;; Object aa/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aa/"
+  :tables (list 
+   (semanticdb-table "args.rhtml"
+    :major-mode 'rhtml-mode
+    :tags 'nil
+    :file "args.rhtml"
+    :pointmax 10
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

@@ -1,0 +1,435 @@
+
+lib/rengine/acts_as_account_controller.rb,773
+module RengineRengine2,15
+  module ActsAsAccountControllerActsAsAccountController5,76
+    def self.included(target)included6,109
+    def validate_login(login)validate_login13,332
+    def signupsignup22,489
+    def  create_user(login,create_user67,1913
+    def loginlogin84,2348
+    def listlist110,3020
+    def start_session(user)start_session115,3130
+    def editedit125,3391
+    def update_emailupdate_email130,3459
+    def logoutlogout137,3553
+    def change_passwordchange_password148,3811
+    def upload_profile_imageupload_profile_image173,4521
+    def set_profile_imageset_profile_image206,5629
+    def oauth_domain_returnoauth_domain_return240,6776
+    def oauth_startoauth_start312,9199
+    def oauth_returnoauth_return336,9769
+
+lib/rengine/acts_as_log_writer.rb,666
+module RengineRengine2,17
+  module ActsAsLogWriterActsAsLogWriter3,32
+    def self.included(base)included4,57
+    def loggerlogger9,145
+    def logger=(l)logger=13,193
+    def log_debug(msg)log_debug17,247
+    def log_warn(msg)log_warn21,311
+    def log_info(msg)log_info25,373
+    def log_error(*args)log_error30,440
+    module ClassMethodsClassMethods34,508
+      def loggerlogger35,532
+      def logger=(l)logger=49,811
+      def log_debug(msg)log_debug53,861
+      def log_warn(msg)log_warn63,1066
+      def log_info(msg)log_info73,1269
+      def log_error(*args)log_error84,1473
+      def logging_error(e)logging_error101,1870
+
+lib/rengine/acts_as_rengine_controller.rb,3394
+module RengineRengine1,0
+  module ActsAsRengineControllerActsAsRengineController2,15
+    def self.included(base)included12,318
+    module ClassMethodsClassMethods29,820
+      def user_classuser_class32,913
+      def user_class=(val)user_class=35,996
+      def blurb_namespaceblurb_namespace41,1120
+      def set_blurb_namespace(value)set_blurb_namespace45,1247
+      def public_bucket=(value)public_bucket=50,1401
+      def public_bucketpublic_bucket53,1495
+      def render_cache_bucket=(value)render_cache_bucket=60,1694
+      def render_cache_bucketrender_cache_bucket63,1800
+      def render_baserender_base72,2108
+    def on_error(e)on_error88,2911
+    def request_hostrequest_host96,3182
+    def request_protocolrequest_protocol100,3274
+    def request_portrequest_port111,3503
+    def double_escape_path_element(value)double_escape_path_element117,3643
+    def request_uri_left_partrequest_uri_left_part120,3747
+    def oauth_uri(provider="FACEBOOK")oauth_uri132,4020
+    def oauth_return_uri(provider,oauth_return_uri138,4365
+    def oauth_domain_return_uri(provider,oauth_domain_return_uri148,4774
+    def oauth_uri_left_partoauth_uri_left_part156,5041
+    def is_administrator?is_administrator?160,5140
+    def if_administratorif_administrator163,5236
+    def new_user_handlernew_user_handler179,5574
+    def set_profile_image_handlerset_profile_image_handler186,5773
+    def upload_profile_image_handlerupload_profile_image_handler189,5825
+    def blurb_namespaceblurb_namespace193,5885
+    def logged_in?logged_in?198,5994
+    def current_user_or_nil      current_user_or_nil203,6056
+    def current_usercurrent_user210,6269
+    def current_user=(new_user)current_user=222,6697
+    def weblab_baseweblab_base229,6922
+    def clear_weblab_cacheclear_weblab_cache238,7214
+    def prepare_for_actionprepare_for_action245,7348
+    def prepare_powerbar_for_actionprepare_powerbar_for_action269,7966
+    def prepare_language_for_actionprepare_language_for_action289,8470
+    def prepare_weblab_for_actionprepare_weblab_for_action312,9008
+    def prepare_rendermode_for_actionprepare_rendermode_for_action326,9395
+    def render_baserender_base356,10054
+    def build_renderer_params(content_for_layout,more={})build_renderer_params360,10112
+    def build_weblab_options(more={})build_weblab_options381,10735
+    def render_weblab(content_for_layout)render_weblab389,10898
+    def render(options = nil, extra_options = {}, &block) #:doc:render401,11308
+    def interpret_rengine_options(options=nil)interpret_rengine_options445,12678
+    def setUserJavascriptsetUserJavascript499,14258
+    def add_to_powerbar(html)add_to_powerbar510,14456
+    def special_tools(html)special_tools514,14534
+    def translation_tool(blurbs)translation_tool527,14758
+    def current_weblabcurrent_weblab533,14906
+    def self.current_weblabcurrent_weblab538,15019
+    def login_required(&block)login_required543,15135
+    def access_deniedaccess_denied554,15387
+    def store_return_to()store_return_to583,16189
+    def redirect_to_target(default=nil)redirect_to_target589,16376
+    def login_from_cookielogin_from_cookie597,16705
+    def l(name,l609,17221
+    def time_ago_in_words(the_time)time_ago_in_words634,17794
+    def errors_array_into_html(array)errors_array_into_html639,17904
+
+lib/rengine/acts_as_weblab_controller.rb,635
+module RengineRengine1,0
+  module ActsAsWeblabsController ActsAsWeblabsController3,16
+    def self.included(target_class)included5,51
+    def stylesheetstylesheet19,846
+    def indexindex24,1006
+    def listlist30,1082
+    def showshow35,1211
+    def newnew39,1278
+    def put_stylesheet_in_s3(weblab)put_stylesheet_in_s343,1330
+    def createcreate47,1485
+    def editedit60,1822
+    def edit_lightedit_light79,2328
+    def make_clonemake_clone96,2798
+    def destroydestroy114,3270
+    def toggle_livetoggle_live124,3425
+    def toggle_livetoggle_live143,3982
+    def toggle_testtoggle_test166,4644
+
+lib/rengine/blurb.rb,750
+module RengineRengine5,95
+  class Blurb < NotRelational::DomainModelBlurb6,110
+    def Blurb.get(namespace,name)get17,451
+    def get_wording(language=$language)get_wording21,551
+    def set_wording(language,text)set_wording33,854
+    def Blurb.set_wording(namespace,name,language,text)set_wording51,1337
+    def Blurb.put_cache_in_storageput_cache_in_storage63,1673
+    def Blurb.rebuild_cache()rebuild_cache67,1906
+    def Blurb.refresh_cache()refresh_cache77,2190
+    def Blurb.make_key(namespace,name,language_id)make_key91,2533
+    def Blurb.get_wording(namespace,name,language_id='en',default_value=nil)get_wording94,2649
+    def Blurb.environment_namespaceenvironment_namespace113,3064
+    def Blurb.l(name,l116,3152
+
+lib/rengine/blurb_map.rb,131
+module RengineRengine1,0
+  class BlurbMapBlurbMap3,51
+    def initialize(namespace)initialize4,68
+    def get(key,get8,134
+
+lib/rengine/blurb_wording.rb,98
+module RengineRengine6,122
+  class BlurbWording < NotRelational::DomainModelBlurbWording7,137
+
+lib/rengine/error.rb,148
+module RengineRengine2,1
+  class Error < NotRelational::DomainModelError3,16
+    def self.create(*args)create14,290
+    def to_sto_s54,1469
+
+lib/rengine/extensions/string.rb,76
+class StringString1,0
+  def to_userto_user2,13
+  def escapeescape6,65
+
+lib/rengine/facebook_oauth.rb,380
+module RengineRengine6,123
+  module FacebookOauthFacebookOauth7,138
+    def validate_oauth_code(provider,code,redirect_uri)validate_oauth_code9,166
+    def initiate_facebook_oauth(return_uri)initiate_facebook_oauth39,1001
+    def handle_return_from_facebook_oauth()handle_return_from_facebook_oauth46,1202
+    def self.add_user_data(facebook_data)add_user_data75,1848
+
+lib/rengine/google_oauth.rb,337
+module RengineRengine6,123
+  module GoogleOauthGoogleOauth7,138
+    def get_oauth_consumerget_oauth_consumer9,164
+    def initiate_google_oauth(return_uri)initiate_google_oauth26,981
+    def handle_return_from_google_oauth()handle_return_from_google_oauth35,1437
+    def self.add_user_data(provider_data)add_user_data57,2209
+
+lib/rengine/language.rb,480
+module RengineRengine5,78
+  class Language < NotRelational::DomainModelLanguage7,94
+    def Language.enabled_languagesenabled_languages12,253
+    def Language.languageslanguages18,484
+    def Language.make_defaultmake_default27,662
+    def Language.enabled_language_idsenabled_language_ids34,829
+    def Language.for_eachfor_each38,978
+    def Language.clear_cacheclear_cache47,1192
+    def Language.get_closest_language(requested_id)get_closest_language54,1434
+
+lib/rengine/memory_blurb_map.rb,225
+module RengineRengine1,0
+  class MemoryBlurbMapMemoryBlurbMap3,16
+    def initialize(default_language='en')initialize4,39
+    def get(key,language,default_value=key)get8,147
+    def put(language,key,value)put14,322
+
+lib/rengine/offline_worker.rb,734
+module RengineRengine6,69
+  class OfflineWorkerOfflineWorker8,85
+    def initialize()initialize13,160
+    def enqueue(klass,method,args)enqueue17,201
+    def enqueue_maintainence(klass,method,*args)enqueue_maintainence21,294
+    def quit_on_int quit_on_int25,411
+    def quit_on_quit quit_on_quit30,497
+    def runrun36,582
+    def run_one_roundrun_one_round48,939
+    def stopstop54,1064
+    def process_work_itemsprocess_work_items58,1091
+    def process_one_work_itemprocess_one_work_item71,1373
+    def self.unmarshal_call(klass_name,method,*marshalled_args)unmarshal_call77,1463
+    def enqueue_impl(queue,klass,method,args)enqueue_impl86,1696
+    def safe_ruby_string(text)safe_ruby_string104,2195
+
+lib/rengine/page_cache_item.rb,196
+module RengineRengine1,0
+  class Webpage_cache_itemWebpage_cache_item3,40
+    def initialize(title,html,layout_version,defer_tag=nil,blurb_names=[])initialize20,555
+    def to_sto_s29,791
+
+lib/rengine/render_base.rb,1003
+module RengineRengine10,184
+  class RenderBaseRenderBase13,219
+    def initialize(initialize17,280
+    def refresh(template_name,key,args={},&prerender_block)refresh43,910
+    def refresh_one_language(template_name,language,key,args={},&prerender_block)refresh_one_language52,1315
+    def render(*args,&prerender_block)render62,1758
+    def read_or_render(template_name,language,key,render_args={},&prerender_block)read_or_render110,3484
+    def force_render(template_name,language,key,args={},&prerender_block)force_render142,4599
+    def process_prerender_block(template_name,key,args,&block)process_prerender_block148,4822
+    def peek(language,key)peek158,5192
+    def get_renderer(template_name)get_renderer193,6130
+    def get_bucket_name(language)get_bucket_name214,6809
+    def delete_s3_page(language,key)delete_s3_page230,7069
+    def put_page_into_s3(language,key,cache_item)put_page_into_s3236,7215
+    def storage_key(renderer_key,language)storage_key246,7549
+
+lib/rengine/renderer.rb,1965
+module RengineRengine8,192
+  class Renderer < ActionView::BaseRenderer9,207
+    def initialize(template_text,options={})initialize35,1009
+    def render_batch(languages,argsx={},callback_options={})render_batch93,2880
+    def get_key(argsx={},callback_options={})get_key106,3272
+    def render(language,argsx={},callback_options={})render120,3582
+    def clearclear157,4578
+    def prep_template(language,frame_binding)prep_template165,4745
+    def is_development?is_development?184,5303
+    def create_binding(argsx,callback_options={})create_binding188,5397
+              def render_partial(template_name,key,args={})render_partial205,5800
+   def set_arg(name,value)set_arg218,6233
+   def apply_view_setup(frame_binding)apply_view_setup226,6442
+   def with_language(frame_binding,language='en')with_language237,6778
+   def escape_tag_content(tag,html)escape_tag_content251,7061
+   def unescape_tag_content(tag,html)unescape_tag_content265,7332
+   def delete_tag_and_content(tag,html)delete_tag_and_content276,7522
+   def unwrap_tag_content(tag,html)unwrap_tag_content290,7748
+   def render_second_pass(cache_item,frame_binding,language,runtime_tags=nil,tags_to_delete=nil,tags_to_unwrap=nil)render_second_pass304,7970
+   def render_impl(template,language,frame_binding)render_impl347,8958
+   def time_ago_in_words(the_time)time_ago_in_words381,10064
+   def oauth_uri(provider)oauth_uri393,10352
+   def l(name,args={})l402,10604
+   def displayed_blurb_namesdisplayed_blurb_names457,12038
+   def set_setup_proc(&block)set_setup_proc464,12167
+   def set_key_proc(&block)set_key_proc468,12233
+   def current_weblabcurrent_weblab474,12355
+   def current_usercurrent_user477,12412
+   def requestrequest480,12465
+   def protect_against_forgery?protect_against_forgery?504,13175
+   def url_for(options = {}, *parameters_for_method_reference) url_for507,13232
+   def compile(template_source)compile544,14050
+
+lib/rengine/static_file_manager.rb,273
+module RengineRengine1,0
+  class StaticFileManagerStaticFileManager2,15
+    def self.upload_weblabs_cssupload_weblabs_css4,42
+    def self.gzip_upload(content,content_type,remote_path)gzip_upload10,236
+    def upload(content,content_type,remote_path)upload23,817
+
+lib/rengine/translation_tool.rb,236
+module RengineRengine1,0
+  class TranslationToolTranslationTool2,15
+    def self.tools_for_all_blurbs(blurbs,language=nil)tools_for_all_blurbs3,39
+    def self.tool_html_for_blurb(blurb_name,options={})tool_html_for_blurb17,616
+
+lib/rengine/uri_util.rb,117
+module RengineRengine1,0
+  module UriUtilUriUtil2,15
+    def escape_path_element(value)escape_path_element3,32
+
+lib/rengine/url_util.rb,115
+module RengineRengine1,0
+  module UriUtilUriUtil2,15
+    def escape_path_element(txt)escape_path_element3,32
+
+lib/rengine/user.rb,1678
+module RengineRengine6,110
+  module RengineUserRengineUser7,125
+    def self.included(target)included8,146
+    module ClassMethodsClassMethods47,1407
+      def create(login,password,other_props={})create48,1431
+      def find_or_create_by_email(email,name,other_props={})find_or_create_by_email71,2104
+      def valid_login?(login)valid_login?86,2570
+      def valid_password?(password)valid_password?99,2916
+      def authenticate(login, password)authenticate107,3169
+      def url_for(login)url_for111,3348
+      def uri_login(login)uri_login114,3421
+      def storage_key(login)storage_key117,3502
+      def find_by_remember_token(token)find_by_remember_token122,3585
+      def find_single(login, options)find_single126,3722
+      def recent(how_many=27)recent143,4254
+      def convert_arg_to_user(user_arg)convert_arg_to_user147,4429
+      def to_userto_user157,4674
+      def convert_arg_to_login(user_arg)convert_arg_to_login162,4786
+      def find_next_free_username(base_username)find_next_free_username171,5002
+    def can_translate?can_translate?199,5755
+    def encrypt(password, salt)encrypt204,5878
+    def authenticated?(password)authenticated?210,5982
+    def remember_token?remember_token?215,6105
+    def remember_meremember_me224,6417
+    def forget_meforget_me230,6652
+    def save(options={})save237,6781
+    def set_password(password)set_password243,6884
+    def uri_loginuri_login250,7097
+    def storage_keystorage_key253,7172
+    def show_storage_keyshow_storage_key256,7241
+    def urlurl260,7325
+    def on_activityon_activity263,7390
+    def urlurl268,7478
+    def to_sto_s272,7532
+
+lib/rengine/view_compiler.rb,124
+module RengineRengine1,0
+  class ViewCompilerViewCompiler2,15
+    def self.compile(view_path,target_class)compile3,36
+
+lib/rengine/weblab.rb,84
+module RengineRengine5,78
+  class Weblab < NotRelational::DomainModelWeblab7,94
+
+lib/rengine/weblab_base.rb,659
+module RengineRengine4,57
+  class WeblabBaseWeblabBase6,73
+    def initialize(live_weblabs,initialize10,154
+    def render_weblab(weblab,language,args={},options={})render_weblab33,682
+    def displayed_blurb_namesdisplayed_blurb_names65,1635
+    def get_renderer(weblab,language_id)get_renderer68,1702
+    def repair_layout(layout)repair_layout77,2053
+    def get_weblab(weblab_id)get_weblab83,2229
+    def get_random_weblabget_random_weblab92,2417
+    def oauth_uri(provider)oauth_uri96,2560
+    def time_ago_in_words(the_time)time_ago_in_words105,2752
+    def test_weblabtest_weblab110,2856
+    def test_layouttest_layout119,3094
+
+lib/rengine/work_request.rb,719
+class StringString2,41
+  def ruby_escaperuby_escape3,54
+module RengineRengine8,115
+  class WorkRequest  < NotRelational::DomainModelWorkRequest9,130
+    def executeexecute23,544
+    def WorkRequest.createRecurring(work,seconds,deduplification_key=nil,options={})createRecurring28,597
+    def WorkRequest.create(work,create64,1877
+    def self.until_lock_or_nil(lock_until=nil)until_lock_or_nil116,3649
+    def WorkRequest.popRecurring()popRecurring150,4451
+    def WorkRequest.popNonRecurring()popNonRecurring174,5573
+    def WorkRequest.poppop196,6732
+    def WorkRequest.executeOne()executeOne200,6806
+    def WorkRequest.ruby_stringify(val)ruby_stringify221,7559
+    def to_sto_s225,7649
+
+lib/rengine/work_result.rb,119
+module RengineRengine1,0
+  class WorkResultWorkResult2,15
+    def initialize(work_request,result)initialize6,111
+
+lib/rengine/worker.rb,0
+
+lib/rengine/yahoo_oauth.rb,339
+module RengineRengine1,0
+  module YahooOauthYahooOauth2,15
+    def get_yahoo_oauth_consumerget_yahoo_oauth_consumer5,41
+    def initiate_yahoo_oauth(return_uri)initiate_yahoo_oauth20,973
+    def handle_return_from_yahoo_oauth()handle_return_from_yahoo_oauth29,1358
+    def self.add_user_data(provider_data)add_user_data51,2134
+
+lib/rengine.rb,0
+
+test/performance/browsing_test.rb,38
+class BrowsingTest BrowsingTest3,74
+
+test/test_helper.rb,39
+class Test::Unit::TestCaseTest10,212
+
+test/unit/blurb_test.rb,183
+class BlurbTest < Test::Unit::TestCaseBlurbTest3,90
+  def BlurbTest.set_upset_up5,130
+  def test_blurb_get()test_blurb_get8,164
+  def test_get_wording()test_get_wording20,403
+
+test/unit/error_test.rb,175
+class UserTest < Test::Unit::TestCaseUserTest4,91
+  def test_create_from_hashtest_create_from_hash6,130
+  def test_create_from_exceptiontest_create_from_exception16,508
+
+test/unit/render_base_test.rb,343
+class TestRenderer < Test::Unit::TestCaseTestRenderer3,90
+  def initialize(name)initialize4,132
+  def setupsetup14,374
+  def test_static_templatetest_static_template27,774
+  def test_localized_templatetest_localized_template34,976
+  def test_argstest_args46,1396
+  def test_keytest_key54,1640
+  def test_cachetest_cache64,1921
+
+test/unit/renderer_test.rb,751
+class TestRenderer < Test::Unit::TestCaseTestRenderer4,91
+  def initialize(name)initialize5,133
+  def test_multi_languagetest_multi_language13,455
+  def test_static_templatetest_static_template23,800
+  def test_simple_templatetest_simple_template31,998
+  def test_blurb_templatetest_blurb_template39,1213
+  def test_default_language_templatetest_default_language_template50,1566
+  def test_default_texttest_default_text58,1782
+  def xxx_test_logic_blurbxxx_test_logic_blurb65,1986
+  def test_logic2test_logic275,2261
+  def test_titletest_title82,2469
+  def test_blurb_stage_2test_blurb_stage_290,2730
+  def test_batchtest_batch98,3033
+  def test_escapetest_escape122,3754
+  def test_runtime_flowtest_runtime_flow134,4115
+
+test/unit/user_test.rb,250
+class UserTest < Test::Unit::TestCaseUserTest4,91
+  class AppUser  < NotRelational::DomainModelAppUser5,129
+  def test_createtest_create9,234
+  def test_find_wrong_casetest_find_wrong_case19,450
+  def test_mixed_propstest_mixed_props28,674
+
+test/unit/work_request_test.rb,100
+class WorkRequestTest < Test::Unit::TestCaseWorkRequestTest3,90
+  def test_deduptest_dedup4,135

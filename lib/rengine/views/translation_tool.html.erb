@@ -1,0 +1,13 @@
+
+LANGUAGE=<%=@language%>
+
+
+  <% @blurbs.each do | blurb |  %>
+<iframe height="200" width="100%" src="<%=@translation_form_url%>?blurb=<%=CGI.escape(blurb)%>">
+Browser does not support iframes?
+</iframe>
+
+
+  <% end %>
+
+

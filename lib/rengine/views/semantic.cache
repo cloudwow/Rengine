@@ -1,0 +1,15 @@
+;; Object views/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "views/"
+  :tables (list 
+   (semanticdb-table "translation_tool.html.erb"
+    :major-mode 'rhtml-mode
+    :tags 'nil
+    :file "translation_tool.html.erb"
+    :pointmax 220
+    )
+   )
+  :file "semantic.cache"
+  :semantic-tag-version "2.0pre4"
+  :semanticdb-version "2.0pre4"
+  )

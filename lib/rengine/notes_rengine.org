@@ -1,0 +1,3 @@
+* render method w/ parameters for each view
+*** make view params explicit in header
+*** generate the render methods from the header

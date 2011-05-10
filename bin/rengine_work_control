@@ -1,0 +1,32 @@
+#!/usr/bin/env ruby
+
+require 'daemons'
+require "rengine"
+Daemons.run_proc('rengine_work',:multiple => true ,:force_kill_waittime=> 180) do
+
+
+  puts "work control 1"
+  root_dir=ARGV[2]
+
+  Dir.chdir(root_dir)
+  
+  include Rengine::ActsAsLogWriter
+  log_info  "ENV[RAILS_ENV]=#{ENV["RAILS_ENV"]}"
+
+  if ARGV.length>3
+    ENV["RAILS_ENV"]=ARGV[3] 
+  else
+    ENV["RAILS_ENV"]="development"
+  end
+
+  log_info  "ENV[RAILS_ENV]=#{ENV["RAILS_ENV"]}"
+  require './config/environment.rb'
+
+  Rengine::OfflineWorker.instance.run
+
+  
+
+end
+
+
+
