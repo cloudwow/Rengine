@@ -2,7 +2,7 @@ require 'oauth'
 require 'oauth/consumer'
 require 'oauth/signature/rsa/sha1'
 require "xmlsimple"
-require 'portablecontacts'
+# require 'portablecontacts'
 module Rengine
   module GoogleOauth
     
@@ -38,7 +38,8 @@ module Rengine
       access_token = request_token.get_access_token(:oauth_verifier => params[:oauth_verifier])
       #      data=access_token.get("http://www-opensocial.googleusercontent.com/api/people/@me/@self").body
 
-      pc_client = PortableContacts::Client.new "http://www-opensocial.googleusercontent.com/api/people", access_token
+     raise "portable contacts is broken in build.  fix it"
+#      pc_client = PortableContacts::Client.new "http://www-opensocial.googleusercontent.com/api/people", access_token
 
       
 

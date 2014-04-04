@@ -2,7 +2,7 @@ require 'oauth'
 require 'oauth/consumer'
 require 'oauth/signature/rsa/sha1'
 require "xmlsimple"
-require 'portablecontacts'
+#require 'portablecontacts'
 module Rengine
   module FacebookOauth
     

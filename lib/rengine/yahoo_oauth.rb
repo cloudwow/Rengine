@@ -31,7 +31,7 @@ module Rengine
       
       access_token = request_token.get_access_token(:oauth_verifier => params[:oauth_verifier])
       #      data=access_token.get("http://www-opensocial.googleusercontent.com/api/people/@me/@self").body
-
+      raise "deleted portable contacts. please fix"
       pc_client = PortableContacts::Client.new "http://www-opensocial.googleusercontent.com/api/people", access_token
 
       

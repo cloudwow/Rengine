@@ -63,7 +63,6 @@ Gem::Specification.new do |s|
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
       s.add_development_dependency(%q<thoughtbot-shoulda>, [">= 0"])
       s.add_runtime_dependency(%q<oauth>, [">= 0"])
-      s.add_runtime_dependency(%q<portablecontacts>, [">= 0"])
       s.add_runtime_dependency(%q<nanikore>, [">= 0"])
       s.add_runtime_dependency(%q<xml-simple>, [">= 0"])
       s.add_runtime_dependency(%q<erubis>, [">= 0"])
@@ -72,7 +71,6 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
       s.add_dependency(%q<oauth>, [">= 0"])
-      s.add_dependency(%q<portablecontacts>, [">= 0"])
       s.add_dependency(%q<nanikore>, [">= 0"])
       s.add_dependency(%q<xml-simple>, [">= 0"])
       s.add_dependency(%q<erubis>, [">= 0"])
@@ -82,7 +80,6 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 0"])
     s.add_dependency(%q<oauth>, [">= 0"])
-    s.add_dependency(%q<portablecontacts>, [">= 0"])
     s.add_dependency(%q<nanikore>, [">= 0"])
     s.add_dependency(%q<xml-simple>, [">= 0"])
     s.add_dependency(%q<erubis>, [">= 0"])

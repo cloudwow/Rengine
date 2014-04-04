@@ -13,7 +13,6 @@ begin
     gem.add_development_dependency "thoughtbot-shoulda"
     gem.require_paths=['lib']
     gem.add_dependency( "oauth")
-    gem.add_dependency( "portablecontacts")
     gem.add_dependency( "nanikore")
     gem.add_dependency( "xml-simple")
     gem.add_dependency( "erubis")
@@ -109,11 +108,10 @@ rescue LoadError
   end
 end
 
-task :test => :check_dependencies
 
 task :default => :test
 
-require 'rake/rdoctask'
+require 'rdoc/task'
 Rake::RDocTask.new do |rdoc|
   if File.exist?('VERSION')
     version = File.read('VERSION')
